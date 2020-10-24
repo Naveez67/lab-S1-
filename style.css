@@ -1,0 +1,9 @@
+.whitecolor{
+    color: white;
+}
+
+.nav-item:hover{
+    background-color:black;
+    color: white;
+    font-size: large;
+}

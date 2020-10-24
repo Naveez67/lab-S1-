@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -13,14 +15,40 @@
 <body>
     <header class="container-fluid">
         
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark mb-0">
                 
                      <a class="navbar-brand " href="#">SPORTSTAR</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <br>
+                
                 <div class="collapse navbar-collapse" id="navbarCollapse">
+                    
+                        <ul class="navbar-nav mr-auto effect">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Archives</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#" >Colums</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#" >Editions</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#" >E-book</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">contact us</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                              <a class="dropdown-item" href="#">Loction</a>
+                              <a class="dropdown-item" href="#">Email</a>
+                              <a class="dropdown-item" href="#">phone</a>
+                            </div>
+                          </li>
+                        </ul>
                    
                     <form class="form-inline mt-2 mt-md-0 ml-auto">
                         <button class="btn btn-outline-success my-2 my-sm-0" >Subscribe Now</button>
@@ -30,11 +58,12 @@
                 </div>
             
             </nav>
+            
     </header>
 
     <div class="container">
         <div class="row" style="background-color: blueviolet;">
-            <div class="col" style="text-align: center;">
+            <div class="col " style="text-align: center;">
                 
 <div class="btn-group" style="float: left;">
     <button type="button" class="btn btn-danger">IPL</button>
@@ -52,14 +81,28 @@
                 <div id="myCarousel" class="carousel slide" data-rid="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            
-                            <p style="padding-left: 4rem;">-match 41 result        upcoing match</p>
-                            <p> CSK  149/9    20overs     KKR <br>MIN  150/9    19overs     DCA </p>
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Match41  Result</h5>
+                                    <p style="margin-bottom: 0%;">CSK 141/8  20overs</p>
+                                    <p>MIN 131/10  17overs</p>
+                                    <marquee behavior="" direction="backword">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, perspiciatis!</marquee>
+                                </div>
+                             
+                            </div>
                         </div>
-                        <div class="carousel-item active">
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col">
+                                    <h5> Match 41</h5>
+                                    <p style="margin-bottom: 0%;">VFB   Thursday</p>
+                                    <p>KOE   </p>
+                                    <marquee behavior="" direction="backword">Lorem ipsum dolor sit amet consectetur
+                                         adipisicing elit. Necessitatibus, perspiciatis!</marquee>
+                                </div>
+                             
+                            </div>
                             
-                            <p style="padding-left: 4rem;">-match 41 result        upcoing match</p>
-                            <p> CSK  149/9    20overs     KKR <br>MIN  150/9    19overs     DCA </p>
                         </div>
                     </div>
                     <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
@@ -71,16 +114,16 @@
                 </div>
             </div>
             <div class="col" style="text-align: center;">
-                <!-- Example split danger button -->
+                
 <div class="btn-group" style="float: left;">
     <button type="button" class="btn btn-danger">Footbal</button>
     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="sr-only">Toggle Dropdown</span>
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
+      <a class="dropdown-item" href="#">Match1</a>
+      <a class="dropdown-item" href="#">Match2</a>
+      <a class="dropdown-item" href="#">Macth3</a>
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
     </div>
@@ -88,14 +131,29 @@
                 <div id="myCarousel1" class="carousel slide" data-rid="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            
-                            <p style="padding-left: 4rem;">-match 41 result        upcoing match</p>
-                            <p> CSK  149/9    20overs     KKR <br>MIN  150/9    19overs     DCA </p>
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Match41  Result</h5>
+                                    <p style="margin-bottom: 0%;">VSF 1</p>
+                                    <p>KOE 1</p>
+                                    <marquee behavior="" direction="backword">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Necessitatibus, perspiciatis!</marquee>
+                                </div>
+                             
+                            </div>
                         </div>
-                        <div class="carousel-item active">
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Match41  Result</h5>
+                                    <p style="margin-bottom: 0%;">VSF 1</p>
+                                    <p style="margin-bottom: 0%;">KOE 1</p>
+                                    <marquee behavior="" direction="backword">Lorem ipsum dolor sit amet consectetur
+                                         adipisicing elit. Necessitatibus, perspiciatis!</marquee>
+                                </div>
+                             
+                            </div>
                             
-                            <p style="padding-left: 4rem;">-match 41 result        upcoing match</p>
-                            <p> CSK  149/9    20overs     KKR <br>MIN  150/9    19overs     DCA </p>
                         </div>
                     </div>
                     <a href="#myCarousel1" class="carousel-control-prev" data-slide="prev">
@@ -106,59 +164,173 @@
                     </a>
                 </div>
             </div>
+            <div class="col" style="text-align: center;">
+                <div class="btn-group" style="float: left;">
+                    <button type="button" class="btn btn-danger">TenisAtp</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Match1</a>
+                      <a class="dropdown-item" href="#">Match2</a>
+                      <a class="dropdown-item" href="#">Macth3</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </div>
+                  <div id="myCarousel2" class="carousel slide" data-rid="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Match41  Result</h5>
+                                    <p style="margin-bottom: 0%;">VSF 1</p>
+                                    <p>KOE 1</p>
+                                    <marquee behavior="" direction="backword">Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. Necessitatibus, perspiciatis!</marquee>
+                                </div>
+                             
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Match41  Result</h5>
+                                    <p style="margin-bottom: 0%;">VSF 1</p>
+                                    <p style="margin-bottom: 0%;">KOE 1</p>
+                                </div>
+                             
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <a href="#myCarousel2" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-2"> <p style="background-color: red;">Latest news</p></div>
             <div class="col">
+                <marquee behavior="" direction="backword">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odio distinctio animi! Temporibus, unde. Ducimus!</marquee>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col">
+                  <img src="1.jpg" style="width: 100%; border-radius: 2rem;" alt="">
+                  <p style="text-align: center;">IPL 2020 kkr vs MIN Match prievew</p>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-2"> <img src="2.jpg" alt="pic" style="width: 50px;height:50px ;"></div>
+                    <div class="col"> IPL 2020, KXIP vs SRH preview: <br> Fight for playoff spot intensifies</div>
+                </div>
+                <div class="row">
+                    <div class="col-2"> <img src="3.jpg" alt="pic" style="width: 50px;height:50px ;"></div>
+                    <div class="col"> IPL 2020, KXIP vs SRH preview: <br> Fight for playoff spot intensifies</div>
+                </div>
+                <div class="row">
+                    <div class="col-2"> <img src="4.jpg" alt="pic" style="width: 50px;height:50px ;"></div>
+                    <div class="col"> IPL 2020, KXIP vs SRH preview: <br> Fight for playoff spot intensifies</div>
+                </div>
+                <div class="row">
+                    <div class="col-2"> <img src="5.jpg" alt="pic" style="width: 50px;height:50px ;"></div>
+                    <div class="col"> IPL 2020, KXIP vs SRH preview: <br> Fight for playoff spot intensifies</div>
+                </div>
+                <div class="row">
+                    <div class="col-2"> <img src="6.jpg" alt="pic" style="width: 50px;height:50px ;"></div>
+                    <div class="col"> IPL 2020, KXIP vs SRH preview: <br> Fight for playoff spot intensifies</div>
+                </div>
+                <div class="row">
+                    <div class="col-2"> <img src="7.jpg" alt="pic" style="width: 50px;height:50px ;"></div>
+                    <div class="col"> IPL 2020, KXIP vs SRH preview: <br> Fight for playoff spot intensifies</div>
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="row h-75 w-75 " style="border: 2px solid black;"></div>
+                <div class="row " style="text-align: center;">
+                    <h4 style="text-align: center;" >Contact us</h4>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="whatsapp.png" style="width: 50px;height: 50px;" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="insta.png" style="width: 50px;height: 50px;" alt="">
+                        <p style="text-align: center;">followers</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="skype.png" style="width: 50px;height: 50px;" alt="">
+                        <p style="text-align: center;">followers</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="loc.png" style="width: 50px;height: 50px;" alt="">
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
-   <footer style="border-top: red; background-color: seagreen;margin-top: 4rem;" class="container-fluid">
+   <footer style="border-top:3px solid red ; background-color: rgb(49, 48, 48);margin-top: 4rem;" class="container-fluid">
      <div class="container">
         <div class="row">
             <div class="col">
-                <p>TRENDING TODAY ___________________________</p>
+                <p style="color: white;">TRENDING TODAY ___________________________</p>
                 <div class="row">
                     <div class="col">
                         <a href="" style="color: white;">IPL</a>
-                        <p>Channisuperking</p>
-                        <p>Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
                     </div>
                     <div class="col">
                         <a href="" style="color: white;">IPL</a>
-                        <p>Channisuperking</p>
-                        <p>Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
                     </div>
                 
                 </div>
 
             </div>
             <div class="col">
-                <p>TRENDING THIS WEEK  ___________________________</p>
+                <p style="color: white;">TRENDING THIS WEEK  ___________________________</p>
                 <div class="row">
                     <div class="col">
                         <a href="" style="color: white;">IPL</a>
-                        <p>Channisuperking</p>
-                        <p>Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
                     </div>
                     <div class="col">
                         <a href="" style="color: white;">IPL</a>
-                        <p>Channisuperking</p>
-                        <p>Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
                     </div>
                 
                 </div>
             </div>
             <div class="col">
-                <p>LATEST NEWS ___________________________</p>
+                <p style="color: white;"> LATEST NEWS ___________________________</p>
                 <div class="row">
                     <div class="col">
                         <a href="" style="color: white;">IPL</a>
-                        <p>Channisuperking</p>
-                        <p>Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
                     </div>
                     <div class="col">
                         <a href="" style="color: white;">IPL</a>
-                        <p>Channisuperking</p>
-                        <p>Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
+                        <p style="color: white;">Channisuperking</p>
                     </div>
                 
                 </div>
@@ -166,7 +338,7 @@
         </div>
         <div class="row" style="color: white;">
             <div class="col">
-                <p>CRICKET </p>
+                <p style="color: white;">CRICKET </p>
                 <a href="" style="color: white;">
                     IPL 2020, DC vs KKR Today Match Toss Live Updates...</a>
                 <a href="" style="color: white;">
@@ -178,8 +350,8 @@
     
             </div>
             <div class="col">
-                <p>FOOTBALL </p>
-                <p>
+                <p style="color: white;">FOOTBALL </p>
+                <p style="color: white;">
                     Wolves boss Nuno praises Semedo's smooth transition to Premier League
 Cavani primed for Man United debut against Chelsea says Solskjaer
 Serie A: Late goals earn unbeaten Sassuolo 3-3 draw with Torino
@@ -188,8 +360,8 @@ Bamford grabs hat-trick as Leeds ends Villa's winning start
                 
                 </div>
                 <div class="col">
-                    <p>ISL 2019-20</p>
-                    <p>
+                    <p style="color: white;">ISL 2019-20</p>
+                    <p style="color: white;">
                         
 ISL 2020-21: Mumbai City FC ropes in midfielder Ahmed Jahouh
 ISL 2020-21: It is important that players trust their abilities, says Hyderabad FC coach Marquez
@@ -197,7 +369,59 @@ ISL 2020-21: Mumbai City FC ropes in Mandar Rao Dessai
 ISL 2020-21: Hyderabad FC starts Level 3 training in Goa
                     </p>
                     </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <p style="color: white;">Sections ___________________________________________________________</p>
+                <div class="row">
+                    <div class="col whitecolor">
+                        <p style="color: white;">cricket</p>
+                        <a href="" style="color: white;">Pakistan <br></a>
+                        <a href="" style="color: white;">International <br></a>
+                        <a href="" style="color: white;">Local</a>
+                    </div>
+                    <div class="col whitecolor">
+                        <p style="color: white;">Footbal</p>
+                        <a href="" style="color: white;">Pakistan <br></a>
+                        <a href="" style="color: white;">International <br></a>
+                        <a href="" style="color: white;">Local</a>
+                        
+                    </div>
+                    <div >
+                        <p style="color: white;" >Tenis</p>
+                        
+                        <a href="" style="color: white;">Pakistan <br></a>
+                        <a href="" style="color: white;">International <br></a>
+                        <a href="" style="color: white;">Local</a>
+                       
+                    </div>
+                </div>
             </div>
+            <div class="col">
+                <p style="color: white;" >GROUP TOP TRENDS _____________________</p>
+                <div class="row">
+                    <div class="col">
+                        <p style="color: white;">The hindu <br></p>
+                        <a href="" style="color: white;">air pollution <br> </a>
+                        <a href="" style="color: white;">USA <br></a>
+                        <a href="" style="color: white;">USA Coronavirus</a>
+                       
+                    </div>
+                    <div class="col">
+                        <p style="color: white;">Businessline <br></p>
+                        <a href="" style="color: white;">foreign banks <br> </a>
+                        <a href="" style="color: white;">weather <br></a>
+                        <a href="" style="color: white;">news Covid-19</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p style="color: red;">Copyright © 2020 THG PUBLISHING PVT LTD. All Rights Reserved</p>
+            </div>
+
+        </div>
             
         
         
